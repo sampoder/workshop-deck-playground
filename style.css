@@ -19,6 +19,59 @@
   font-display: swap;
 }
 
+@keyframes fadeInFirst {
+  from {
+      opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+}
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInSlide {
+  from {
+      opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+}
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInSecond {
+  from {
+      opacity: 0;
+  }
+  50% {
+    opacity: 0;
+}
+  to {
+      opacity: 1;
+  }
+}
+
+
+.subtitleAnimate {
+  animation: fadeInFirst 1s linear;
+}
+
+.titleAnimate {
+  animation: fadeInSecond 4s linear;
+}
+
+.slideAnimate {
+  animation: fadeInSlide 1s linear;
+}
+
+.instructAnimate {
+  animation: fadeInSecond 4s linear;
+}
+
 /*
 Safari has a rendering bug that sometimes prevented text from rendering on certain slides.
 This is a hack that forces each new page to re-render.

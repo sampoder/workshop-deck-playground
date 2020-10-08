@@ -2,48 +2,50 @@ import { Grid, Flex, Box, Image, Text, Link as A } from "theme-ui"
 import Vertical from '../components/vertical'
 import Editor from "../components/editor"
 
-<Vertical>
 
-# Personal Website
+<Box sx={{ textAlign: 'left', width: '80%', maxWidth: '100%' }}>
 
-Make your first website from scratch
-by @MatthewStanciu
+<h2 style={{ fontSize: '2em' }} className='subtitleAnimate'>Welcome to</h2>
+<h1 style={{ fontSize: '4em', width: '100%' }} className='titleAnimate'>Orpheus Leap</h1>
 
-![Screenshot of simple site made by this workshop](https://cloud-az7fz0pav.vercel.app/dino_site.png)
+<p style={{ marginLeft: '0px' }} className='instructAnimate'>Click <code><span style={{ fontSize: '1.2em' }}>&rarr;</span></code> to continue.</p>
 
-</Vertical>
+</Box>
 
----
+<Horizontal style={{ display: 'none'}}>
 
-# An overview
+# Orpheus Leap
 
-Making a website is just about writing text. You can do it in your browser for free.
-
-Basic websites are written in 2 languages: HTML to put content on the page, and CSS for styling and layout.
+</Horizontal>
 
 ---
 
-<Vertical>
 
-# An overview
+<Horizontal className='subtitleAnimate'>
 
-  HTML and CSS are the building blocks of the web. **Every website** is made with HTML and CSS 🤯
+<Flex sx={{ flexDirection: 'column', px: '10px', textAlign: 'left' }}>
 
+# Powering Leap
 
-  <Flex sx={{
-    img: {
-      flex: '1 1 auto',
-      maxWidth: '50vw'
-    } }}>
+To power Leap insert a Micro-USB cable into the port highlighted below. 
 
+For this manual, plug Leap into your computer so we can upload code.
 
-  ![Hack Club Twitter](https://cloud-qy06fecsg.vercel.app/screen_shot_2020-09-07_at_3.29.28_pm.png)
+</Flex>
 
+![Orpheus Leap](https://cloud-jrox24mrn.vercel.app/orpheus_leap_micro_final.png)
 
-  ![The Former Pizza Huts subreddit](https://cloud-bdrh857tf.vercel.app/screen_shot_2020-09-07_at_3.31.27_pm.png)
+</Horizontal>
 
+---
 
-  </Flex>
+<Vertical className='subtitleAnimate'>
+
+# Programming Leap
+
+<p style={{ width: '100%' }}>Using Arduino's IDE you can write code and upload it to Leap. 
+  <br /><a href="https://www.arduino.cc/en/Main/software">Download it here for macOS, Windows & Linux.</a></p>
+  <img src="https://i.imgur.com/WpXUbqJ.png" style={{borderRadius: '10px', boxShadow: '0px 0px 30px grey', marginTop: '15px'}} />
 
 </Vertical>
 
